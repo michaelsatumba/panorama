@@ -26,25 +26,24 @@ function App() {
             onClick={() => setDarkMode(!darkMode)}
           >
             {darkMode ? (
-              <SunIcon className="h-6 w-6 text-yellow-500" />
+              <SunIcon className="h-3 w-3 text-yellow-500" />
             ) : (
-              <MoonIcon className="h-6 w-6 text-gray-800" />
+              <MoonIcon className="h-3 w-3 text-gray-800" />
             )}
-            <span className="ml-2">{darkMode ? 'Light' : 'Dark'} Mode</span>
           </button>
           <nav className="mt-4">
             <Link to="/company">
-              <button className="rounded-md bg-blue-300 text-white px-4 py-2 m-2 hover:bg-blue-500 dark:bg-blue-700 dark:hover:bg-blue-900">
+              <button className="rounded-md bg-blue-300 text-white text-sm px-4 py-2 m-2 hover:bg-blue-500 dark:bg-blue-700 dark:hover:bg-blue-900">
                 Company View
               </button>
             </Link>
             <Link to="/team">
-              <button className="rounded-md bg-blue-300 text-white px-4 py-2 m-2 hover:bg-blue-500 dark:bg-blue-700 dark:hover:bg-blue-900">
+              <button className="rounded-md bg-blue-300 text-white text-sm px-4 py-2 m-2 hover:bg-blue-500 dark:bg-blue-700 dark:hover:bg-blue-900">
                 Team View
               </button>
             </Link>
             <Link to="/individual">
-              <button className="rounded-md bg-blue-300 text-white px-4 py-2 m-2 hover:bg-blue-500 dark:bg-blue-700 dark:hover:bg-blue-900">
+              <button className="rounded-md bg-blue-300 text-white text-sm px-4 py-2 m-2 hover:bg-blue-500 dark:bg-blue-700 dark:hover:bg-blue-900">
                 Individual View
               </button>
             </Link>
