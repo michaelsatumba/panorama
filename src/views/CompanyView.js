@@ -68,15 +68,15 @@ const CompanyView = ({ darkMode }) => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <button className="rounded-full text-gray-500 px-4 py-2 hover:bg-black dark:hover:bg-gray-700">Roadmap</button>
-        <button className="rounded-full text-gray-500 px-4 py-2 hover:bg-black dark:hover:bg-gray-700">Celebrations</button>
-        <button className="rounded-full text-gray-500 px-4 py-2 hover:bg-black dark:hover:bg-gray-700">All-Hands Notes</button>
+        <button className="rounded-full text-gray-500 px-4 py-2 hover:bg-black dark:hover:text-white">Roadmap</button>
+        <button className="rounded-full text-gray-500 px-4 py-2 hover:bg-black dark:hover:text-white">Celebrations</button>
+        <button className="rounded-full text-gray-500 px-4 py-2 hover:bg-black dark:hover:text-white">All-Hands Notes</button>
       </div>
 
       {/* Flex */}
       <div className="flex space-x-4 mb-4">
         {/* Medium Square */}
-        <div className="w-64 h-64 bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col justify-evenly">
+        <div className="flex-grow bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col justify-evenly px-8 py-10">
             <svg className="w-16 h-16 text-green-700 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <circle cx="10" cy="10" r="10" />
             </svg>
@@ -127,11 +127,11 @@ const CompanyView = ({ darkMode }) => {
         </div>
         </div>
         {/* Small Square */}
-        <div className="w-56 h-60 bg-white dark:bg-gray-700 p-4 shadow rounded-lg flex">
+        <div className="flex-grow bg-white dark:bg-gray-700 shadow rounded-lg px-12 py-6">
           <div className="flex flex-col items-start space-y-6">
-            <div className="flex items-center">
+            <div className="flex items-center space-x-2">
               <i class="fas fa-square-root-alt"></i>
-              <span className="ml-2 font-bold">Pulse Stats</span>
+              <h2 className="font-bold">Pulse&nbsp;Stats</h2>
             </div>
             <div className="flex flex-col items-start space-y-2">
             <p><i class="fab fa-github"></i> <span className="ml-2">67</span></p>
@@ -141,7 +141,7 @@ const CompanyView = ({ darkMode }) => {
           </div>
         </div>
         {/* Small Square */}
-        <div className="w-56 h-60 bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+        <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
         <div className="flex flex-col items-start space-y-6">
         <div className="flex items-center space-x-2">
           <i class="fas fa-chart-line"></i>
@@ -165,9 +165,13 @@ const CompanyView = ({ darkMode }) => {
           <i class="fas fa-user"></i>
           <h2 className="font-bold">Design</h2>
         </div>
-          <ul className="list-disc list-inside mb-2 text-left">
-            <li>Landing Page is 'Ready for Eng'</li>
-            <li>Published 15 Design System updates</li>
+          <ul className="list-none mb-2 text-left gray-text">
+          <li className="relative pl-3 mb-4">
+          <span className="absolute left-0 top-0 text-gray-300">•</span>
+          Landing Page is 'Ready for Eng'</li>
+          <li className="relative pl-3 mb-4">
+          <span className="absolute left-0 top-0 text-gray-300">•</span>
+          Published 15 Design System updates</li>
           </ul>
           <div className="flex space-x-4">
             <p><i class="fab fa-figma"></i> <span>33</span></p>
@@ -182,10 +186,16 @@ const CompanyView = ({ darkMode }) => {
           <i class="fas fa-dollar-sign"></i>
           <h2 className="font-bold">Sales</h2>
           </div>
-          <ul className="list-disc list-inside mb-2 text-left">
-            <li>Had 10 lead gen calls</li>
-            <li>Had 2 account management calls</li>
-            <li>Revised the sales forecast for Q4 2024</li>
+          <ul className="list-none mb-2 text-left">
+            <li className="relative pl-3 mb-4">
+            <span className="absolute left-0 top-0 text-gray-300">•</span>
+            Had 10 lead gen calls</li>
+            <li className="relative pl-3 mb-4">
+            <span className="absolute left-0 top-0 text-gray-300">•</span>
+            Had 2 account management calls</li>
+            <li className="relative pl-3 mb-4">
+            <span className="absolute left-0 top-0 text-gray-300">•</span>
+            Revised the sales forecast for Q4 2024</li>
           </ul>
           <div className="flex space-x-4">
             <p><i class="fab fa-salesforce"></i> <span>123</span></p>
@@ -199,9 +209,13 @@ const CompanyView = ({ darkMode }) => {
         <i class="fas fa-user-friends"></i>
           <h2 className="font-bold">Product</h2>
         </div>
-          <ul className="list-disc list-inside mb-2 text-left">
-            <li>Did the roadmap planning with 3 engineering teams</li>
-            <li>Reviewed the landing page design with <u>Kyle</u> and the design is now ready for the engineering team</li>
+          <ul className="list-none mb-2 text-left">
+            <li className="relative pl-3 mb-4">
+            <span className="absolute left-0 top-0 text-gray-300">•</span>
+            Did the roadmap planning with 3 engineering teams</li>
+            <li className="relative pl-3 mb-4">
+            <span className="absolute left-0 top-0 text-gray-300">•</span>
+            Reviewed the landing page design <br/> with <u>Kyle</u> and the design is now <br/> ready for the engineering team</li>
           </ul>
           <div className="flex space-x-4">
             <p><i class="fab fa-slack"></i> <span>136</span></p>
