@@ -118,7 +118,7 @@ const CompanyView = ({ darkMode }) => {
         {/* Medium Rectangle */}
         <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
           <div className="flex items-center space-x-2 mb-2">
-          <div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+          <div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
     <i className="fas fa-cat"></i>
 </div>
             <h2 className="font-bold">Engineering</h2>
@@ -147,7 +147,7 @@ const CompanyView = ({ darkMode }) => {
         <div className="flex-grow bg-white dark:bg-gray-700 shadow rounded-lg pl-6 pr-12 py-6">
           <div className="flex flex-col items-start space-y-6">
             <div className="flex items-center space-x-2">
-            <div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+            <div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
               <i class="fas fa-square-root-alt"></i>
             </div>
               <h2 className="font-bold">Pulse&nbsp;Stats</h2>
@@ -163,7 +163,7 @@ const CompanyView = ({ darkMode }) => {
         <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
         <div className="flex flex-col items-start space-y-6">
         <div className="flex items-center space-x-2">
-        <div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+        <div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
           <i class="fas fa-chart-line"></i>
         </div>
           <h2 className="font-bold">DAU</h2>
@@ -183,7 +183,7 @@ const CompanyView = ({ darkMode }) => {
         {/* Large Square */}
         <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
         <div className="flex items-center space-x-2 mb-2">
-        <div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+        <div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
           <i class="fas fa-user"></i>
           </div>
           <h2 className="font-bold">Design</h2>
@@ -206,7 +206,7 @@ const CompanyView = ({ darkMode }) => {
         {/* Large Square */}
         <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
         <div className="flex items-center space-x-2 mb-2">
-        <div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10"> 
+        <div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10"> 
           <i class="fas fa-dollar-sign"></i>
             </div>
           <h2 className="font-bold">Sales</h2>
@@ -231,7 +231,7 @@ const CompanyView = ({ darkMode }) => {
         {/* Large Square */}
         <div className="bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
         <div className="flex items-center space-x-2 mb-2">
-        <div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+        <div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
         <i class="fas fa-user-friends"></i>
         </div>
           <h2 className="font-bold">Product</h2>

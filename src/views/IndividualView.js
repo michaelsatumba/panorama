@@ -35,7 +35,7 @@ Today
 <div className="flex space-x-4 mb-4">
 {/* Medium Square */}
 <div className="flex-grow bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col px-8 py-10 space-y-4">
-<div className="inline-block bg-gray-300 rounded-full p-4 h-16 w-16">
+<div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-4 h-16 w-16">
     <i className="fas fa-user text-2xl"></i>
 </div>
     <div className="font-bold">Christine Li</div>
@@ -72,7 +72,7 @@ Contributed to the offsite idea for H2 2024</li>
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
     <div className="flex items-center justify-between mb-2">
-    <div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+    <div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
         <i className="fab fa-github"></i>
     </div>
         <div>
@@ -108,7 +108,7 @@ Contributed to the offsite idea for H2 2024</li>
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
 <div className="flex mb-2">
-<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+<div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
     <i className="fab fa-github"></i>
 </div>
 </div>
@@ -128,7 +128,7 @@ Contributed to the offsite idea for H2 2024</li>
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
 <div className="flex mb-2">
-<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+<div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
     <i className="fas fa-video"></i>
 </div>
 </div>
@@ -146,7 +146,7 @@ Contributed to the offsite idea for H2 2024</li>
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
 <div className="flex mb-2">
-<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+<div className="inline-block bg-gray-300 dark:bg-gray-600 rounded-full p-2 h-10 w-10">
     <i className="fab fa-slack"></i>
 </div>
 </div>
