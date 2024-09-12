@@ -117,7 +117,7 @@ const CompanyView = ({ darkMode }) => {
             </li>
             <li className="relative pl-3 mb-4">
               <span className="absolute left-0 top-0 text-yellow-500">•</span>
-              Michael received a shout out for debugging the prod bug for failed to fetch data
+              <u>Michael</u> received a shout out for debugging the prod bug for failed to fetch data
             </li>
           </ul>
         <div className="flex space-x-4">
@@ -160,40 +160,54 @@ const CompanyView = ({ darkMode }) => {
       {/* Flex */}
       <div className="flex space-x-4 mb-4">
         {/* Large Square */}
-        <div className="w-48 h-48 bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-          <img src="path/to/image.jpg" alt="Design" className="mb-2" />
-          <h2 className="font-bold mb-2">Design</h2>
-          <ul className="list-disc list-inside mb-2">
-            <li>Bullet point 1</li>
-            <li>Bullet point 2</li>
+        <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+        <div className="flex items-center space-x-2">
+          <i class="fas fa-user"></i>
+          <h2 className="font-bold">Design</h2>
+        </div>
+          <ul className="list-disc list-inside mb-2 text-left">
+            <li>Landing Page is 'Ready for Eng'</li>
+            <li>Published 15 Design System updates</li>
           </ul>
-          <p>Figma: 123</p>
-          <p>GitHub: 456</p>
-          <p>Slack: 789</p>
-          <p>Zoom: 101</p>
+          <div className="flex space-x-4">
+            <p><i class="fab fa-figma"></i> <span>33</span></p>
+            <p><i class="fab fa-github"></i> <span>1</span></p>
+            <p><i class="fab fa-slack"></i> <span>45</span></p>
+            <p><i class="fas fa-video"></i> <span>45m</span></p>
+          </div>
         </div>
         {/* Large Square */}
-        <div className="w-48 h-48 bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-          <img src="path/to/image.jpg" alt="Sales" className="mb-2" />
-          <h2 className="font-bold mb-2">Sales</h2>
-          <ul className="list-disc list-inside mb-2">
-            <li>Bullet point 1</li>
-            <li>Bullet point 2</li>
-            <li>Bullet point 3</li>
+        <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+        <div className="flex items-center space-x-2">
+          <i class="fas fa-dollar-sign"></i>
+          <h2 className="font-bold">Sales</h2>
+          </div>
+          <ul className="list-disc list-inside mb-2 text-left">
+            <li>Had 10 lead gen calls</li>
+            <li>Had 2 account management calls</li>
+            <li>Revised the sales forecast for Q4 2024</li>
           </ul>
-          <p>Salesforce: 123</p>
-          <p>Slack: 456</p>
-          <p>Zoom: 789</p>
+          <div className="flex space-x-4">
+            <p><i class="fab fa-salesforce"></i> <span>123</span></p>
+            <p><i class="fab fa-slack"></i> <span>456</span></p>
+            <p><i class="fas fa-video"></i> <span>789</span></p>
+          </div>
         </div>
         {/* Large Square */}
-        <div className="w-48 h-48 bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-          <img src="path/to/image.jpg" alt="Product" className="mb-2" />
-          <h2 className="font-bold mb-2">Product</h2>
-          <ul className="list-disc list-inside mb-2">
-            <li>Bullet point 1</li>
-            <li>Bullet point 2</li>
-            <li>Bullet point 3</li>
+        <div className="bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+        <div className="flex items-center space-x-2">
+        <i class="fas fa-user-friends"></i>
+          <h2 className="font-bold">Product</h2>
+        </div>
+          <ul className="list-disc list-inside mb-2 text-left">
+            <li>Did the roadmap planning with 3 engineering teams</li>
+            <li>Reviewed the landing page design with <u>Kyle</u> and the design is now ready for the engineering team</li>
           </ul>
+          <div className="flex space-x-4">
+            <p><i class="fab fa-slack"></i> <span>136</span></p>
+            <p><i class="fas fa-video"></i> <span>185m</span></p>
+            <i class="fas fa-user"></i>
+          </div>
         </div>
       </div>
     </div>
