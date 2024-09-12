@@ -35,7 +35,9 @@ Today
 <div className="flex space-x-4 mb-4">
 {/* Medium Square */}
 <div className="flex-grow bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col px-8 py-10 space-y-4">
+<div className="inline-block bg-gray-300 rounded-full p-4 h-16 w-16">
     <i className="fas fa-user text-2xl"></i>
+</div>
     <div className="font-bold">Christine Li</div>
     <div className="text-gray-500 text-sm">
         <p>Staff Software Engineering</p>
@@ -68,9 +70,11 @@ Contributed to the offsite idea for H2 2024</li>
 <div className="flex space-x-4 mb-4">
 
 {/* Medium Rectangle */}
-<div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg pr-64">
+<div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
     <div className="flex items-center justify-between mb-2">
+    <div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
         <i className="fab fa-github"></i>
+    </div>
         <div>
             <p>+5</p>
         </div>
@@ -78,20 +82,20 @@ Contributed to the offsite idea for H2 2024</li>
     <p className="flex font-bold">oauth</p>
     <p className="text-gray-500 text-left text-xs">Changes on inactive user storage management</p>
     <br/>
-    <div className="flex space-x-4 text-xs">
+    <div className="flex space-x-4 text-xs mb-2">
         <p><i class="fas fa-arrow-up pr-1"></i>1</p>
         <p><i class="fas fa-arrow-down pr-1"></i>2</p>
         <p><i class="fas fa-arrow-left pr-1"></i>3</p>
         <p><i class="fas fa-arrow-right pr-1"></i>1</p>
     </div>
-    <div className="flex space-x-4 mt-6">
+    <div className="flex space-x-4">
         <p><i class="fas fa-user-friends"></i></p>
         <p classname="text-sm text-gray-500">60m ago</p>
     </div>
 
 </div>
 {/* Medium Rectangle */}
-<div className="w-1/4">
+<div className="w-1/4 pl-12">
  <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="Dog" className="w-full h-auto rounded-lg" />
 </div>
 
@@ -100,70 +104,92 @@ Contributed to the offsite idea for H2 2024</li>
 
 {/* Flex */}
 <div className="flex space-x-4 mb-4">
+
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-<div className="flex items-center mb-2">
-    <i className="fas fa-user mr-4"></i>
-    <div className="flex flex-col items-start">
-    <p className="font-bold">Christopher Downs</p>
-    <p className="text-gray-500 text-sm">Engineering Manager</p>
-    </div>
+<div className="flex mb-2">
+<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+    <i className="fab fa-github"></i>
 </div>
-<ul className="list-none mb-2 text-left font-semibold text-sm">
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-500">•</span>
-    Facilitated the Inactive user token and storage discussion meeting
-    </li>
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-500">•</span>
-    Did roadmap planning with 3 teams to sync the pace
-    </li>
-</ul>
+</div>
+<p className="flex font-bold">13 issues</p>
+<p className="text-gray-500 text-left text-xs mb-2">Making progress in updating the oauth system</p>
+<div className="flex space-x-4 mb-2">
+<p><i class="fas fa-circle"></i> 2</p>
+<p><i class="fas fa-check"></i> 2</p>
+<p><i class="fas fa-times"></i> 3</p>
+</div>
 <div className="flex space-x-4">
-<p><i class="fab fa-github"></i> 2</p>
-<p><i class="fab fa-slack"></i> 170</p>
-<p><i class="fas fa-video"></i> 165m</p><br/>
-</div>
-<div className="text-left mt-2">
-  <i className="fas fa-user-friends block"></i>
-</div>
+        <p><i class="fas fa-user-friends"></i></p>
+        <p classname="text-sm text-gray-500">17m ago</p>
+    </div>
 </div>
 
 {/* Medium Rectangle */}
-<div className="flex-grow bg-white dark:bg-gray-700 px-6 py-4 shadow rounded-lg">
-<div className="flex items-center mb-2">
-    <i className="fas fa-user mr-4"></i>
-    <div className="flex flex-col items-start">
-    <p className="font-bold">Michael Berger</p>
-    <p className="text-gray-500 text-sm">Senior Software Engineer</p>
+<div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+<div className="flex mb-2">
+<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+    <i className="fas fa-video"></i>
+</div>
+</div>
+<p className="flex font-bold">2 meetings</p>
+<p className="text-gray-500 text-left text-xs mb-2">Discussed inactive user storage management strategy</p>
+<div className="flex space-x-4 mb-2">
+<p><i class="fas fa-clock"></i> 120m</p>
+</div>
+<div className="flex space-x-4">
+        <p><i class="fas fa-user-friends"></i></p>
+        <p classname="text-sm text-gray-500">13m ago</p>
     </div>
 </div>
-<ul className="list-none mb-2 text-left font-semibold text-sm">
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-500">•</span>
-    Resolved high priority prod bug for failed to fetch data
-    </li>
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-500">•</span>
-    Changed the timestamp field on #auth-api with Faye
-    </li>
-</ul>
+
+{/* Medium Rectangle */}
+<div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+<div className="flex mb-2">
+<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+    <i className="fab fa-slack"></i>
+</div>
+</div>
+<p className="flex font-bold">125 messages</p>
+<p className="text-gray-500 text-left text-xs mb-2">Discussed inactive user storage management strategy</p>
+<div className="flex space-x-4 mb-2">
+<p><i class="fas fa-message"></i> 3 channels</p>
+</div>
 <div className="flex space-x-4">
-<p><i class="fab fa-github"></i> 2</p>
-<p><i class="fab fa-slack"></i> 70</p>
-<p><i class="fas fa-video"></i> 45m</p>
-</div>
-<div className="text-left mt-2">
-  <i className="fas fa-user-friends block"></i>
+        <p><i class="fas fa-user-friends"></i></p>
+        <p classname="text-sm text-gray-500">1m ago</p>
+    </div>
 </div>
 </div>
 
-{/*Picture */}
-<div className="w-1/3">
-  <img src="https://picsum.photos/200" alt="Random" className="w-full h-auto rounded-lg" />
+{/* buttons */}
+<div className="flex space-x-4 bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+    {/* Plus Icon Button */}
+    <button className="bg-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 dark:bg-orange-700 p-2 shadow rounded-lg">
+        <i className="fas fa-plus"></i>
+    </button>
+    {/* Horizontal Line */}
+    <p className="text-3xl text-gray-300">|</p>
+    {/* Search Icon Button */}
+    <button className="bg-gray-200 hover:bg-orange-500 dark:hover:bg-orange-500 dark:bg-gray-500 p-2 shadow rounded-lg">
+        <i className="fas fa-search"></i>
+    </button>
+    {/* Star Icon Button */}
+    <button className="bg-gray-200 hover:bg-orange-500 dark:hover:bg-orange-500 dark:bg-gray-500 p-2 shadow rounded-lg">
+        <i className="fas fa-star"></i>
+    </button>
+    {/* Jigsaws Icon Button */}
+    <button className="bg-gray-200 hover:bg-orange-500 dark:hover:bg-orange-500 dark:bg-gray-500 p-2 shadow rounded-lg">
+        <i className="fas fa-puzzle-piece"></i>
+    </button>
+        {/* Horizontal Line */}
+        <p className="text-3xl text-gray-300">|</p>
+    {/* Scale Icon Button */}
+    <button className="bg-gray-200 hover:bg-orange-500 dark:hover:bg-orange-500 dark:bg-gray-500 p-2 shadow rounded-lg">
+        <i className="fas fa-balance-scale"></i>
+    </button>
 </div>
 
-</div>
 
 </div>
 );

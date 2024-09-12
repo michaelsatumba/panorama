@@ -36,7 +36,9 @@ Today
 <div className="flex space-x-4 mb-4">
 {/* Medium Square */}
 <div className="flex-grow bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col px-8 py-10 space-y-4">
+<div className="inline-block bg-gray-300 rounded-full p-4 h-16 w-16">
     <i className="fas fa-rainbow text-2xl"></i>
+</div>
     <div className="font-bold">Auth</div>
     <div className="text-gray-500 text-sm">
         <p>Software Engineering Team</p>
@@ -69,8 +71,10 @@ Worked on #oauth-inactive-user and #dashboard-revamp</li>
 <div className="flex space-x-4 mb-4">
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-<div className="flex items-center mb-2">
-    <i className="fas fa-user mr-4"></i>
+<div className="flex items-center space-x-2 mb-2">
+<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+    <i className="fas fa-user"></i>
+</div>
     <div className="flex flex-col items-start">
     <p className="font-bold">Aaron Jones</p>
     <p className="text-gray-500 text-sm">Software Engineer</p>
@@ -103,8 +107,10 @@ Worked on #oauth-inactive-user and #dashboard-revamp</li>
 </div>
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-<div className="flex items-center mb-2">
-    <i className="fas fa-user mr-4"></i>
+<div className="flex items-center space-x-2 mb-2">
+<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+    <i className="fas fa-user"></i>
+</div>
     <div className="flex flex-col items-start">
     <p className="font-bold">Christine Li</p>
     <p className="text-gray-500 text-sm">Staff Software Engineer</p>
@@ -137,8 +143,10 @@ Worked on #oauth-inactive-user and #dashboard-revamp</li>
 <div className="flex space-x-4 mb-4">
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-<div className="flex items-center mb-2">
-    <i className="fas fa-user mr-4"></i>
+<div className="flex items-center space-x-2 mb-2">
+<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+    <i className="fas fa-user"></i>
+</div>
     <div className="flex flex-col items-start">
     <p className="font-bold">Christopher Downs</p>
     <p className="text-gray-500 text-sm">Engineering Manager</p>
@@ -166,8 +174,10 @@ Worked on #oauth-inactive-user and #dashboard-revamp</li>
 
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 px-6 py-4 shadow rounded-lg">
-<div className="flex items-center mb-2">
-    <i className="fas fa-user mr-4"></i>
+<div className="flex items-center space-x-2 mb-2">
+<div className="inline-block bg-gray-300 rounded-full p-2 h-10 w-10">
+    <i className="fas fa-user"></i>
+</div>
     <div className="flex flex-col items-start">
     <p className="font-bold">Michael Berger</p>
     <p className="text-gray-500 text-sm">Senior Software Engineer</p>
