@@ -45,7 +45,7 @@ Today
 </div>
 {/* Big Rectangle */}
 <div className="bg-white dark:bg-gray-700 py-4 pl-6 pr-8 shadow flex flex-col rounded-lg">
-<ul className="list-none text-left gray-text font-bold text-sm">
+<ul className="list-none text-left gray-text font-semibold text-sm">
 <li className="relative pl-3 mb-4">
 <span className="absolute left-0 top-0 text-gray-300">•</span>
 Worked on #oauth-inactive-user and #dashboard-revamp</li>
@@ -76,7 +76,7 @@ Worked on #oauth-inactive-user and #dashboard-revamp</li>
     <p className="text-gray-500 text-sm">Software Engineer</p>
     </div>
 </div>
-<ul className="list-none mb-2 text-left">
+<ul className="list-none mb-2 text-left font-semibold text-sm">
     <li className="relative pl-3 mb-4">
     <span className="absolute left-0 top-0 text-gray-500">•</span>
     Added alert on failed fetch data error
@@ -110,7 +110,7 @@ Worked on #oauth-inactive-user and #dashboard-revamp</li>
     <p className="text-gray-500 text-sm">Staff Software Engineer</p>
     </div>
 </div>
-<ul className="list-none mb-2 text-left">
+<ul className="list-none mb-2 text-left font-semibold text-sm">
     <li className="relative pl-3 mb-4">
     <span className="absolute left-0 top-0 text-yellow-500">•</span>
     Facilitated the Inactive user token and storage discussion meeting
@@ -135,71 +135,71 @@ Worked on #oauth-inactive-user and #dashboard-revamp</li>
 
 {/* Flex */}
 <div className="flex space-x-4 mb-4">
-{/* Large Square */}
+{/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-<div className="flex items-center space-x-2">
-<i class="fas fa-user"></i>
-<h2 className="font-bold">Design</h2>
+<div className="flex items-center mb-2">
+    <i className="fas fa-user mr-4"></i>
+    <div className="flex flex-col items-start">
+    <p className="font-bold">Christopher Downs</p>
+    <p className="text-gray-500 text-sm">Engineering Manager</p>
+    </div>
 </div>
-<ul className="list-none mb-2 text-left gray-text">
-<li className="relative pl-3 mb-4">
-<span className="absolute left-0 top-0 text-gray-300">•</span>
-Landing Page is 'Ready for Eng'</li>
-<li className="relative pl-3 mb-4">
-<span className="absolute left-0 top-0 text-gray-300">•</span>
-Published 15 Design System updates</li>
+<ul className="list-none mb-2 text-left font-semibold text-sm">
+    <li className="relative pl-3 mb-4">
+    <span className="absolute left-0 top-0 text-gray-500">•</span>
+    Facilitated the Inactive user token and storage discussion meeting
+    </li>
+    <li className="relative pl-3 mb-4">
+    <span className="absolute left-0 top-0 text-gray-500">•</span>
+    Did roadmap planning with 3 teams to sync the pace
+    </li>
 </ul>
 <div className="flex space-x-4">
-    <p><i class="fab fa-figma"></i> <span>33</span></p>
-    <p><i class="fab fa-github"></i> <span>1</span></p>
-    <p><i class="fab fa-slack"></i> <span>45</span></p>
-    <p><i class="fas fa-video"></i> <span>45m</span></p>
+<p><i class="fab fa-github"></i> 2</p>
+<p><i class="fab fa-slack"></i> 170</p>
+<p><i class="fas fa-video"></i> 165m</p><br/>
+</div>
+<div className="text-left mt-2">
+  <i className="fas fa-user-friends block"></i>
 </div>
 </div>
-{/* Large Square */}
+
+{/* Medium Rectangle */}
+<div className="flex-grow bg-white dark:bg-gray-700 px-6 py-4 shadow rounded-lg">
+<div className="flex items-center mb-2">
+    <i className="fas fa-user mr-4"></i>
+    <div className="flex flex-col items-start">
+    <p className="font-bold">Michael Berger</p>
+    <p className="text-gray-500 text-sm">Senior Software Engineer</p>
+    </div>
+</div>
+<ul className="list-none mb-2 text-left font-semibold text-sm">
+    <li className="relative pl-3 mb-4">
+    <span className="absolute left-0 top-0 text-gray-500">•</span>
+    Resolved high priority prod bug for failed to fetch data
+    </li>
+    <li className="relative pl-3 mb-4">
+    <span className="absolute left-0 top-0 text-gray-500">•</span>
+    Changed the timestamp field on #auth-api with Faye
+    </li>
+</ul>
+<div className="flex space-x-4">
+<p><i class="fab fa-github"></i> 2</p>
+<p><i class="fab fa-slack"></i> 70</p>
+<p><i class="fas fa-video"></i> 45m</p>
+</div>
+<div className="text-left mt-2">
+  <i className="fas fa-user-friends block"></i>
+</div>
+</div>
+
+{/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-<div className="flex items-center space-x-2">
-<i class="fas fa-dollar-sign"></i>
-<h2 className="font-bold">Sales</h2>
+  <img src="https://picsum.photos/200" alt="Random" className="w-full h-auto rounded-lg" />
 </div>
-<ul className="list-none mb-2 text-left">
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-300">•</span>
-    Had 10 lead gen calls</li>
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-300">•</span>
-    Had 2 account management calls</li>
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-300">•</span>
-    Revised the sales forecast for Q4 2024</li>
-</ul>
-<div className="flex space-x-4">
-    <p><i class="fab fa-salesforce"></i> <span>123</span></p>
-    <p><i class="fab fa-slack"></i> <span>456</span></p>
-    <p><i class="fas fa-video"></i> <span>789</span></p>
+
 </div>
-</div>
-{/* Large Square */}
-<div className="bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-<div className="flex items-center space-x-2">
-<i class="fas fa-user-friends"></i>
-<h2 className="font-bold">Product</h2>
-</div>
-<ul className="list-none mb-2 text-left">
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-300">•</span>
-    Did the roadmap planning with 3 engineering teams</li>
-    <li className="relative pl-3 mb-4">
-    <span className="absolute left-0 top-0 text-gray-300">•</span>
-    Reviewed the landing page design <br/> with <u>Kyle</u> and the design is now <br/> ready for the engineering team</li>
-</ul>
-<div className="flex space-x-4">
-    <p><i class="fab fa-slack"></i> <span>136</span></p>
-    <p><i class="fas fa-video"></i> <span>185m</span></p>
-    <i class="fas fa-user"></i>
-</div>
-</div>
-</div>
+
 </div>
 );
 }
