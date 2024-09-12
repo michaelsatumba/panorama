@@ -127,7 +127,7 @@ const CompanyView = ({ darkMode }) => {
         </div>
         </div>
         {/* Small Square */}
-        <div className="flex-grow bg-white dark:bg-gray-700 shadow rounded-lg px-12 py-6">
+        <div className="flex-grow bg-white dark:bg-gray-700 shadow rounded-lg pl-6 pr-12 py-6">
           <div className="flex flex-col items-start space-y-6">
             <div className="flex items-center space-x-2">
               <i class="fas fa-square-root-alt"></i>
