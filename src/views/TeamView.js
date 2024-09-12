@@ -193,8 +193,8 @@ Worked on #oauth-inactive-user and #dashboard-revamp</li>
 </div>
 </div>
 
-{/* Medium Rectangle */}
-<div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+{/*Picture */}
+<div className="w-1/3">
   <img src="https://picsum.photos/200" alt="Random" className="w-full h-auto rounded-lg" />
 </div>
 
