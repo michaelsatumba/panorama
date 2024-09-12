@@ -35,25 +35,33 @@ Today
 {/* Flex */}
 <div className="flex space-x-4 mb-4">
 {/* Medium Square */}
-<div className="flex-grow bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col justify-evenly px-8 py-10">
-    <svg className="w-16 h-16 text-green-700 mr-2" fill="currentColor" viewBox="0 0 20 20">
-        <circle cx="10" cy="10" r="10" />
-    </svg>
-    <div className="font-bold">A Better Company, Inc</div>
+<div className="flex-grow bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col px-8 py-10 space-y-4">
+    <i className="fas fa-rainbow text-2xl"></i>
+    <div className="font-bold">Auth</div>
     <div className="text-gray-500 text-sm">
-        <p>"We make companies better"</p>
+        <p>Software Engineering Team</p>
         <p>San Francisco, CA</p>
     </div>
 </div>
 {/* Big Rectangle */}
-<div className="bg-white dark:bg-gray-700 p-4 shadow flex flex-col rounded-lg">
-<div className="text-left text-gray-500 flex-grow flex flex-col justify-between">
-    <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The engineering team worked on #oauth-inactive-user and #dashboard-revamp</p>
-    <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The engineering team and the product team spent 75 minutes roadmap planning</p>
-    <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The Landing Page design is ready for engineers</p>
-    <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The sales team revised the sales forecast for Q4 2024</p>
-    <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The monthly active user grew 33% month over month</p>
-</div>
+<div className="bg-white dark:bg-gray-700 py-4 pl-6 pr-8 shadow flex flex-col rounded-lg">
+<ul className="list-none text-left gray-text font-bold text-sm">
+<li className="relative pl-3 mb-4">
+<span className="absolute left-0 top-0 text-gray-300">•</span>
+Worked on #oauth-inactive-user and #dashboard-revamp</li>
+<li className="relative pl-3 mb-4">
+<span className="absolute left-0 top-0 text-gray-300">•</span>
+<u>Michael</u> recieved a shout out for debugging the prod bug for failed to fetch data</li>
+<li className="relative pl-3 mb-4">
+<span className="absolute left-0 top-0 text-gray-300">•</span>
+<u>Christine</u>,<u>Aaron</u>, and <u>Alexey</u> closed discussion on storage plan for inactive user&nbsp;with</li>
+<li className="relative pl-3 mb-4">
+<span className="absolute left-0 top-0 text-gray-300">•</span>
+<u>Christine</u> helped 4 engineers from 3 teams</li>
+<li className="relative pl-3 mb-4">
+<span className="absolute left-0 top-0 text-gray-300">•</span>
+<u>Christopher</u> led roadmap planning</li>
+</ul>
 </div>
 </div>
 
@@ -62,55 +70,65 @@ Today
 {/* Medium Rectangle */}
 <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
 <div className="flex items-center mb-2">
-    <i className="fas fa-cat mr-2"></i>
-    <h2 className="font-bold">Engineering</h2>
+    <i className="fas fa-user mr-4"></i>
+    <div className="flex flex-col items-start">
+    <p className="font-bold">Aaron Jones</p>
+    <p className="text-gray-500 text-sm">Software Engineer</p>
+    </div>
+</div>
+<ul className="list-none mb-2 text-left">
+    <li className="relative pl-3 mb-4">
+    <span className="absolute left-0 top-0 text-gray-500">•</span>
+    Added alert on failed fetch data error
+    </li>
+    <li className="relative pl-3 mb-4">
+    <span className="absolute left-0 top-0 text-gray-500">•</span>
+    Updated runbook for failed fetch data alert
+    </li>
+    <li className="relative pl-3 mb-4">
+    <span className="absolute left-0 top-0 text-gray-500">•</span>
+    Attended #auth-api meeting to provide context for the front-end teams
+    </li>
+    <li className="relative pl-3 mb-4">
+    <span className="absolute left-0 top-0 text-gray-500">•</span>
+    Updated the auth API documentation
+    </li>
+</ul>
+<div className="flex space-x-4">
+<p><i class="fab fa-github"></i> 4</p>
+<p><i class="fab fa-slack"></i> 45</p>
+<p><i class="fas fa-video"></i> 45m</p>
+<p><i class="fas fa-user-friends"></i></p>
+</div>
+</div>
+{/* Medium Rectangle */}
+<div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+<div className="flex items-center mb-2">
+    <i className="fas fa-user mr-4"></i>
+    <div className="flex flex-col items-start">
+    <p className="font-bold">Christine Li</p>
+    <p className="text-gray-500 text-sm">Staff Software Engineer</p>
+    </div>
 </div>
 <ul className="list-none mb-2 text-left">
     <li className="relative pl-3 mb-4">
     <span className="absolute left-0 top-0 text-yellow-500">•</span>
-    Worked on #oauth-inactive-user and #dashboard-revamp
+    Facilitated the Inactive user token and storage discussion meeting
     </li>
     <li className="relative pl-3 mb-4">
     <span className="absolute left-0 top-0 text-yellow-500">•</span>
-    Did the roadmap planning with the product team
+    Gave a shoutout to <u>Michael</u> for his work on debugging the prod bug for failed to fetch data
     </li>
     <li className="relative pl-3 mb-4">
     <span className="absolute left-0 top-0 text-yellow-500">•</span>
-    <u>Michael</u> received a shout out for debugging the prod bug for failed to fetch data
+    Closed discussion on storage plan for inactive user with <u>Aaron</u> and <u>Alexey</u>
     </li>
 </ul>
 <div className="flex space-x-4">
-<p><i class="fab fa-github"></i> 44</p>
-<p><i class="fab fa-slack"></i> 456</p>
-<p><i class="fas fa-video"></i> 789</p>
-</div>
-</div>
-{/* Small Square */}
-<div className="flex-grow bg-white dark:bg-gray-700 shadow rounded-lg pl-6 pr-12 py-6">
-<div className="flex flex-col items-start space-y-6">
-    <div className="flex items-center space-x-2">
-    <i class="fas fa-square-root-alt"></i>
-    <h2 className="font-bold">Pulse&nbsp;Stats</h2>
-    </div>
-    <div className="flex flex-col items-start space-y-2">
-    <p><i class="fab fa-github"></i> <span className="ml-2">67</span></p>
-    <p><i class="fab fa-slack"></i> <span className="ml-2">770</span></p>
-    <p><i class="fas fa-video"></i> <span className="ml-2">1245</span></p>
-    </div>
-</div>
-</div>
-{/* Small Square */}
-<div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-<div className="flex flex-col items-start space-y-6">
-<div className="flex items-center space-x-2">
-<i class="fas fa-chart-line"></i>
-<h2 className="font-bold">DAU</h2>
-</div>
-<div className="flex flex-col items-center">
-    {/* graph */}
-    {/* text daily active users */}
-    <p className="font-bold mt-2 text-xs">Daily Active Users</p>
-</div>
+<p><i class="fab fa-github"></i> 13</p>
+<p><i class="fab fa-slack"></i> 36</p>
+<p><i class="fas fa-video"></i> 75m</p>
+<p><i class="fas fa-user-friends"></i></p>
 </div>
 </div>
 </div>

@@ -76,7 +76,7 @@ const CompanyView = ({ darkMode }) => {
       {/* Flex */}
       <div className="flex space-x-4 mb-4">
         {/* Medium Square */}
-        <div className="flex-grow bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col justify-evenly px-8 py-10">
+        <div className="flex-grow bg-white dark:bg-gray-700 flex items-center justify-center rounded-lg shadow flex-col px-8 py-10 space-y-4">
             <svg className="w-16 h-16 text-green-700 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <circle cx="10" cy="10" r="10" />
             </svg>
