@@ -1,8 +1,56 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Chart, registerables } from 'chart.js';
 
-function CompanyView() {
+Chart.register(...registerables);
+
+const CompanyView = ({ darkMode }) => {
+
+  const chartRef = useRef(null);
+  const chartInstanceRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = chartRef.current.getContext('2d');
+
+    if (chartInstanceRef.current) {
+      chartInstanceRef.current.destroy();
+    }
+
+    chartInstanceRef.current = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['May', 'Jun', 'Jul', 'Aug'],
+        datasets: [{
+          label: 'Daily Active Users',
+          data: [1, 1.2, 1.5, 1.8], // Example data in millions
+          borderColor: '#4a5568', // Line color
+          backgroundColor: '#4a5568', // Semi-transparent background color
+ 
+          fill: false,
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: function(value) {
+                return value + 'm';
+              }
+            }
+          }
+        }
+      }
+    });
+
+    return () => {
+      if (chartInstanceRef.current) {
+        chartInstanceRef.current.destroy();
+      }
+    };
+  }, []);
   return (
-    <div className="p-4 flex flex-col items-center">
+    <div className="p-4 mx-52 flex flex-col items-center">
       {/* Title */}
       <div className="flex items-center justify-center mb-4">
         <svg className="w-4 h-4 text-green-700 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -41,11 +89,11 @@ function CompanyView() {
         {/* Big Rectangle */}
         <div className="bg-white dark:bg-gray-700 p-4 shadow flex flex-col rounded-lg">
           <div className="text-left text-gray-500 flex-grow flex flex-col justify-between">
-            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg">The engineering team worked on #oauth-inactive-user and #dashboard-revamp</p>
-            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg">The engineering team and the product team spent 75 minutes roadmap planning</p>
-            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg">The Landing Page design is ready for engineers</p>
-            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg">The sales team revised the sales forecast for Q4 2024</p>
-            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg">The monthly active user grew 33% month over month</p>
+            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The engineering team worked on #oauth-inactive-user and #dashboard-revamp</p>
+            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The engineering team and the product team spent 75 minutes roadmap planning</p>
+            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The Landing Page design is ready for engineers</p>
+            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The sales team revised the sales forecast for Q4 2024</p>
+            <p className="text-black before:content-['•'] before:text-gray-300 before:mr-2 before:text-lg dark:text-white">The monthly active user grew 33% month over month</p>
           </div>
         </div>
       </div>
@@ -54,30 +102,58 @@ function CompanyView() {
       <div className="flex space-x-4 mb-4">
         {/* Medium Rectangle */}
         <div className="flex-grow bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
-          <img src="path/to/image.jpg" alt="Engineering" className="mb-2" />
-          <h2 className="font-bold mb-2">Engineering</h2>
-          <ul className="list-disc list-inside mb-2">
-            <li>Bullet point 1</li>
-            <li>Bullet point 2</li>
-            <li>Bullet point 3</li>
+          <div className="flex items-center mb-2">
+            <i className="fas fa-cat mr-2"></i>
+            <h2 className="font-bold">Engineering</h2>
+          </div>
+          <ul className="list-none mb-2 text-left">
+            <li className="relative pl-3 mb-4">
+              <span className="absolute left-0 top-0 text-yellow-500">•</span>
+              Worked on #oauth-inactive-user and #dashboard-revamp
+            </li>
+            <li className="relative pl-3 mb-4">
+              <span className="absolute left-0 top-0 text-yellow-500">•</span>
+              Did the roadmap planning with the product team
+            </li>
+            <li className="relative pl-3 mb-4">
+              <span className="absolute left-0 top-0 text-yellow-500">•</span>
+              Michael received a shout out for debugging the prod bug for failed to fetch data
+            </li>
           </ul>
-          <p>GitHub: 123</p>
-          <p>Slack: 456</p>
-          <p>Zoom: 789</p>
+        <div className="flex space-x-4">
+          <p><i class="fab fa-github"></i> 44</p>
+          <p><i class="fab fa-slack"></i> 456</p>
+          <p><i class="fas fa-video"></i> 789</p>
+        </div>
         </div>
         {/* Small Square */}
-        <div className="w-32 h-32 bg-white dark:bg-gray-700 p-2 shadow rounded-lg">
-          <img src="path/to/image.jpg" alt="Pulse Stats" className="mb-2" />
-          <h2 className="font-bold mb-2">Pulse Stats</h2>
-          <p>GitHub: 123</p>
-          <p>Slack: 456</p>
-          <p>Zoom: 789</p>
+        <div className="w-56 h-60 bg-white dark:bg-gray-700 p-4 shadow rounded-lg flex">
+          <div className="flex flex-col items-start space-y-6">
+            <div className="flex items-center">
+              <i class="fas fa-square-root-alt"></i>
+              <span className="ml-2 font-bold">Pulse Stats</span>
+            </div>
+            <div className="flex flex-col items-start space-y-2">
+            <p><i class="fab fa-github"></i> <span className="ml-2">67</span></p>
+            <p><i class="fab fa-slack"></i> <span className="ml-2">770</span></p>
+            <p><i class="fas fa-video"></i> <span className="ml-2">1245</span></p>
+            </div>
+          </div>
         </div>
         {/* Small Square */}
-        <div className="w-32 h-32 bg-white dark:bg-gray-700 p-2 shadow rounded-lg">
-          <img src="path/to/image.jpg" alt="DAU" className="mb-2" />
-          <h2 className="font-bold mb-2">DAU</h2>
-          <p>Graph</p>
+        <div className="w-56 h-60 bg-white dark:bg-gray-700 p-4 shadow rounded-lg">
+        <div className="flex flex-col items-start space-y-6">
+        <div className="flex items-center space-x-2">
+          <i class="fas fa-chart-line"></i>
+          <h2 className="font-bold">DAU</h2>
+        </div>
+        <div className="flex flex-col items-center">
+            {/* graph */}
+            <canvas ref={chartRef} className="w-auto h-20"></canvas>
+            {/* text daily active users */}
+            <p className="font-bold mt-2 text-xs">Daily Active Users</p>
+        </div>
+        </div>
         </div>
       </div>
 

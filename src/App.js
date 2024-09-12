@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App min-h-screen flex flex-col dark:bg-gray-900 dark:text-white">
+      <div className={`App min-h-screen flex flex-col ${darkMode ? 'dark' : ''}`}>
         <header className="App-header dark:bg-gray-800">
           <button
             className="rounded-md bg-gray-300 text-black px-4 py-2 m-2 hover:bg-gray-500 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-900 flex items-center"
@@ -52,7 +52,7 @@ function App() {
         <main className="flex-grow p-4 dark:bg-gray-800 dark:text-white">
           <Routes>
             <Route path="/" element={<Navigate to="/company" />} />
-            <Route path="/company" element={<CompanyView />} />
+            <Route path="/company" element={<CompanyView darkMode={darkMode} />} />
             <Route path="/team" element={<TeamView />} />
             <Route path="/individual" element={<IndividualView />} />
           </Routes>
